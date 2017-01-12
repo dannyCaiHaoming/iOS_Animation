@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A7775C41E74E6AF98684152890560B535E124411",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A7775C41E74E6AF98684152890560B535E124411" : 9223372036854775807,
+    "931138AF7249ACE7EA419C5C0A6202C46B99FA9F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9416E159-8D3F-43C4-AA8A-F21942034CA5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A7775C41E74E6AF98684152890560B535E124411" : "learn_CALayer\/",
+    "931138AF7249ACE7EA419C5C0A6202C46B99FA9F" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "learn_CALayer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "learn_CALayer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dannyCaiHaoming\/iOS_Animation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "931138AF7249ACE7EA419C5C0A6202C46B99FA9F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dannyCaiHaoming\/ios_animation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A7775C41E74E6AF98684152890560B535E124411"
+    }
+  ]
+}
