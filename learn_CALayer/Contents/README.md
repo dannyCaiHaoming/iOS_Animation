@@ -1,0 +1,39 @@
+
+contents属性：
+CALayer有一个属性，可是赋值为CGImage。
+头疼的不仅仅是我们刚才提到的这个问题。事实上，你真正要赋值的类型应该是CGImageRef，它是一个指向CGImage结构的指针。
+UIImage有一个CGImage属性，它返回一个"CGImageRef",如果你想把这个值直接赋值给CALayer的contents，那你将会得到一个编译错误。
+因为CGImageRef并不是一个真正的Cocoa对象，而是一个Core Foundation类型。需要赋值需要使用
+(__bridge id)image.CGImage;
+
+
+contentGravity属性：
+这个属性对应的是view的contentMode，但是它是一个NSString类型，而不是普遍的枚举类型。可选的常量有：
+kCAGravityCenter
+kCAGravityTop
+kCAGravityBottom
+kCAGravityLeft
+kCAGravityRight
+kCAGravityTopLeft
+kCAGravityTopRight
+kCAGravityBottomLeft
+kCAGravityBottomRight
+kCAGravityResize
+kCAGravityResizeAspect
+kCAGravityResizeAspectFill
+
+contentsScale属性：
+contentsScale属性定义了寄宿图的像素尺寸和视图大小的比例，默认情况下它是一个值为1.0的浮点数。
+当contents设置了contentsCravity属性的时候，这个属性就不起作用了，并不是总会对contents起作用。
+
+maskToBounds属性：
+对应于UIView的一个属性clipsToBounds，控制是否显示超出边界的内容。
+
+contentsRect：
+CALayer的contentsRect属性允许我们在图层边框里显示寄宿图的一个子域。
+contentRect不是按点来计算的，它使用单位坐标。指定在0到1之间，是一个相对值。
+默认的contentsRect是{0, 0, 1, 1}，这意味着整个寄宿图默认都是可见的。
+
+delegate:
+CALayer有一个可选的delegate属性，实现CALayerDelegate协议，除非你创建了一个单独的图层，你几乎没有机会用到CALayerDelegate协议。
+因为当UIView创建了它的宿主图层时，它就会自动地把图层的delegate设置为它自己，并提供了一个-displayLayer:的实现，那所有的问题就都没了。
