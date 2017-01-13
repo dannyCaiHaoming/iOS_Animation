@@ -27,7 +27,7 @@
     tableView.dataSource = self;
     [self.view addSubview:tableView];
     
-    dataSoure = @[[ContentViewController new],[ExplicitAnimationViewController new],[VisualEffectViewController new]];
+    dataSoure = @[[ContentViewController new],[ExplicitAnimationViewController new],[VisualEffectViewController new],[TransformViewController new]];
 }
 
 

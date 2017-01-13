@@ -12,5 +12,6 @@
 #import "ContentViewController.h"
 #import "ExplicitAnimationViewController.h"
 #import "VisualEffectViewController.h"
+#import "TransformViewController.h"
 
 #endif /* Header_h */

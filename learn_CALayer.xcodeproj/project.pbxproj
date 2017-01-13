@@ -37,6 +37,7 @@
 		333CA8771E27686C00BAA521 /* TransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TransformViewController.m; path = Transform/TransformViewController.m; sourceTree = "<group>"; };
 		333CA8781E27686C00BAA521 /* TransformViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransformViewController.xib; path = Transform/TransformViewController.xib; sourceTree = "<group>"; };
 		333CA87B1E27688F00BAA521 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Transform/README.md; sourceTree = "<group>"; };
+		336A08611E28768900CD9B18 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		336C55341E1CEE6500CC3239 /* learn_CALayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learn_CALayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		336C55381E1CEE6500CC3239 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		336C553A1E1CEE6500CC3239 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				332F96301E1DE7AD00743A83 /* Header.h */,
+				336A08611E28768900CD9B18 /* PrefixHeader.pch */,
 				336C553A1E1CEE6500CC3239 /* AppDelegate.h */,
 				336C553B1E1CEE6500CC3239 /* AppDelegate.m */,
 				336C553D1E1CEE6500CC3239 /* ViewController.h */,
@@ -358,6 +360,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/caihaoming/Desktop/github/learn_CALayer/learn_CALayer/PrefixHeader.pch;
 				INFOPLIST_FILE = learn_CALayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Gemo.learn-CALayer";
@@ -369,6 +373,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/caihaoming/Desktop/github/learn_CALayer/learn_CALayer/PrefixHeader.pch;
 				INFOPLIST_FILE = learn_CALayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Gemo.learn-CALayer";
